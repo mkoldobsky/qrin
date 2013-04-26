@@ -7,6 +7,8 @@ gem 'rails', '3.2.13'
 
 group :development do
 	gem 'sqlite3', '1.3.5'
+	gem 'rqrcode-rails3'
+	gem 'mini_magick'
 end
 
 
