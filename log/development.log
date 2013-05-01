@@ -653,3 +653,84 @@ Processing by UsersController#index as SVG
   [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" 
   Rendered text template (0.1ms)
 Completed 200 OK in 205ms (Views: 201.3ms | ActiveRecord: 0.5ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-05-01 20:23:42 -0300
+Served asset /rails.png - 304 Not Modified (2ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/home" for 127.0.0.1 at 2013-05-01 20:27:56 -0300
+
+ActionController::RoutingError (No route matches [GET] "/home"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/user/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/user/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/user/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/user/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2013-05-01 20:28:25 -0300
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+Compiled static_pages.css  (122ms)  (pid 7383)
+Compiled application.css  (134ms)  (pid 7383)
+Compiled static_pages.js  (1025ms)  (pid 7383)
+Compiled application.js  (1036ms)  (pid 7383)
+Completed 200 OK in 1433ms (Views: 1432.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-01 20:28:26 -0300
+Served asset /application.css - 304 Not Modified (64ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-01 20:28:26 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-01 20:28:27 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-05-01 20:28:27 -0300
+Served asset /users.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-05-01 20:28:27 -0300
+Served asset /static_pages.css - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-01 20:28:27 -0300
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-05-01 20:28:27 -0300
+Served asset /static_pages.js - 200 OK (5ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-05-01 20:28:27 -0300
+Served asset /users.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-01 20:28:27 -0300
+Served asset /application.js - 304 Not Modified (128ms)
