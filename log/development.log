@@ -1401,3 +1401,17 @@ Served asset /static_pages.js - 304 Not Modified (4ms)
 
 Started GET "/assets/rails.png" for 127.0.0.1 at 2013-05-01 21:09:45 -0300
 Served asset /rails.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-05-01 21:15:39 -0300
+Served asset /rails.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-05-01 21:15:42 -0300
+Served asset /rails.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-05-01 21:16:09 -0300
+Served asset /rails.png - 304 Not Modified (5ms)
