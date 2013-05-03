@@ -6,6 +6,8 @@ Qrin::Application.routes.draw do
   match '/contact', to: 'static_pages#contact'
 
   match '/signup',  to: 'users#new'  
+
+  resources :users
   
 
 
