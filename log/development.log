@@ -653,3 +653,50 @@ Processing by UsersController#index as SVG
   [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" 
   Rendered text template (0.1ms)
 Completed 200 OK in 205ms (Views: 201.3ms | ActiveRecord: 0.5ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-04-28 10:29:49 -0300
+Served asset /rails.png - 200 OK (42ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-04-28 10:29:55 -0300
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 253ms (Views: 225.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-28 10:29:55 -0300
+Served asset /application.css - 200 OK (16ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-28 10:29:55 -0300
+Served asset /jquery_ujs.js - 200 OK (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-28 10:29:55 -0300
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-04-28 10:29:55 -0300
+Served asset /users.css - 200 OK (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-28 10:29:55 -0300
+Served asset /scaffolds.css - 200 OK (13ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-28 10:29:55 -0300
+Served asset /users.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-28 10:29:55 -0300
+Served asset /application.js - 200 OK (12ms)
+
+
+Started GET "/users.svg" for 127.0.0.1 at 2013-04-28 10:29:55 -0300
+Processing by UsersController#index as SVG
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" 
+  Rendered text template (0.0ms)
+Completed 200 OK in 147ms (Views: 140.7ms | ActiveRecord: 0.3ms)
