@@ -7,6 +7,9 @@ Qrin::Application.routes.draw do
 
   match '/signup',  to: 'users#new'  
 
+  match '/land', to: 'awkin#index'
+
+
   resources :users
   
 
