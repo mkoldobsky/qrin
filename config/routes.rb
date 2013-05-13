@@ -12,6 +12,7 @@ Qrin::Application.routes.draw do
 
   resources :users
   
+  post 'awkin/setGeoLocation/:lat&:long', to:'awkin#setGeoLocation'
 
 
   # The priority is based upon order of creation:
