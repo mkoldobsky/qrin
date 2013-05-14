@@ -20,7 +20,6 @@ def setGeoLocation
 	@awkin = Awkin.last
 	@lat = params[:lat]
 	@long = params[:long]
-	@lat = 10
 	@awkin.lat = @lat.to_s
 	@awkin.long = @long.to_s
 	@awkin.save
