@@ -6,6 +6,7 @@ def index
 	@awkin = Awkin.create
 	@awkin.date = Date.today
 	@awkin.total = @total
+	@awkin.generation = request.path
 	
 	@awkin.save
 
