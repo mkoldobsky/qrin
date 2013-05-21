@@ -8,7 +8,6 @@ gem 'bootstrap-sass', '2.1'
 
 group :development, :test do
 	gem 'sqlite3', '1.3.5'
-	gem 'rspec-rails', '2.11.0'
 	gem 'rqrcode-rails3'
 	gem 'mini_magick'
 end
