@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130520214735) do
+ActiveRecord::Schema.define(:version => 20130520224401) do
 
   create_table "awkins", :force => true do |t|
     t.integer  "total"
@@ -20,7 +20,13 @@ ActiveRecord::Schema.define(:version => 20130520214735) do
     t.string   "long"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.string   "generation"
+  end
+
+  create_table "generations", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.string   "hash_name"
+    t.string   "name"
   end
 
   create_table "users", :force => true do |t|

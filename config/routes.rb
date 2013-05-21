@@ -1,4 +1,7 @@
 Qrin::Application.routes.draw do
+  resources :generations
+
+
   root to: 'static_pages#home'
   
   match '/help',    to: 'static_pages#help'
