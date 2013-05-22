@@ -2,3 +2,8 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
+$(document).ready ->
+  navigator.geolocation.getCurrentPosition (position) ->
+    $.ajax
+      url: "/awkin/setGeoLocation"
+      data: "lat=" + position.coords.latitude + "&long=" + position.coords.longitude

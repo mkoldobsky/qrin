@@ -8,8 +8,8 @@ def index
 		@awkin.date = Date.today
 		@awkin.total = @total
 		@path = request.path
-		#@generation = Generation.where("hash_name = ?", @path)
-		#@awkin.generation = @generation
+		@generation = Generation.where("hashname = ?", @path).first
+		@awkin.generation = @generation
 		@awkin.save
 		respond_to do |format|
 	      format.html 
@@ -23,7 +23,8 @@ end
 
 def setGeoLocation
 	begin
-		@awkin = Awkin.where("total = ?", params[:total])
+		#@awkin = Awkin.where("total = ?", params[:total]).first
+		@awkin = Awkin.last
 		@lat = params[:lat]
 		@long = params[:long]
 		@awkin.lat = @lat.to_s
