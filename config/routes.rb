@@ -1,4 +1,7 @@
 Qrin::Application.routes.draw do
+  resources :generations
+
+
   root to: 'static_pages#home'
   
   match '/help',    to: 'static_pages#help'
@@ -7,7 +10,9 @@ Qrin::Application.routes.draw do
 
   match '/signup',  to: 'users#new'  
 
-  match '/land', to: 'awkin#index'
+  #match '/land', to: 'awkin#index'
+  #landing-gen-1
+  match '/26c92cce31165bc01bbd7ee31ca07c37', to: 'awkin#index'
 
   match ':controller(/:action(/:id))(.:format)'
 

@@ -10,7 +10,9 @@ gem 'mini_magick'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
-	gem 'rspec-rails', '2.11.0'
+	gem 'sqlite3', '1.3.5'
+	gem 'rqrcode-rails3'
+	gem 'mini_magick'
 end
 
 
