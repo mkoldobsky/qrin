@@ -71,7 +71,6 @@ GEM
     mime-types (1.23)
     mini_magick (3.6.0)
       subexec (~> 0.2.1)
-<<<<<<< HEAD
     multi_json (1.7.2)
     net-scp (1.1.1)
       net-ssh (>= 2.6.5)
@@ -80,9 +79,6 @@ GEM
     net-ssh (2.6.7)
     net-ssh-gateway (1.2.0)
       net-ssh (>= 2.6.5)
-=======
-    multi_json (1.7.3)
->>>>>>> f7aa9dcec2817c0dc90294f562caf84ff162fd66
     nokogiri (1.5.9)
     pg (0.12.2)
     polyglot (0.3.3)
