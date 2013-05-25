@@ -23,8 +23,8 @@ end
 
 def setGeoLocation
 	begin
-		#@awkin = Awkin.where("total = ?", params[:total]).first
-		@awkin = Awkin.last
+		@awkin = Awkin.where("total = ?", params[:total]).first
+		#@awkin = Awkin.last
 		@lat = params[:lat]
 		@long = params[:long]
 		@awkin.lat = @lat.to_s
