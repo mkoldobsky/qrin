@@ -9,8 +9,8 @@ set :use_sudo, false
 set :deploy_to, "/var/www/html"
 set :user, "ec2-user"
 set :keep_releases, 3
-ssh_options[:keys] = ["/home/user/Projects/cubedrkey.pem"] 
-#ssh_options[:keys] = "~/.ssh/cubedrkey.pem"
+#ssh_options[:keys] = ["/home/user/Projects/cubedrkey.pem"] 
+ssh_options[:keys] = "~/.ssh/cubedrkey.pem"
 
 role :web, "54.235.107.7"                          # Your HTTP server, Apache/etc
 role :app, "54.235.107.7"                          # This may be the same as your `Web` server
