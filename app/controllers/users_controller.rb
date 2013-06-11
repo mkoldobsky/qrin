@@ -86,6 +86,6 @@ class UsersController < ApplicationController
 
   private
   def options
-    {:qrcode => "http://cubedr.com", :size => 4}
+    {:qrcode => "http://awkin.co/26c92cce31165bc01bbd7ee31ca07c37", :size => 6}
   end
 end
