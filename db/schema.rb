@@ -11,10 +11,9 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130522125752) do
+ActiveRecord::Schema.define(:version => 20130623180213) do
 
   create_table "awkins", :force => true do |t|
-    t.integer  "total"
     t.datetime "date"
     t.string   "lat"
     t.string   "long"
