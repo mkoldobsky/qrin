@@ -6,7 +6,7 @@
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
     <%= render 'layouts/shim' %>    
-    <%= render partial: "layouts/flash_messages", flash: flash %> 
+    <%= render "layouts/flash_messages" %> 
   </head>
   <body>
     <%= render 'layouts/header' %>
@@ -15,7 +15,7 @@
       <%= render 'layouts/footer' %>
     </div>
   <%= render :partial => 'layouts/ga' if Rails.env == 'production' %>
-  <%= render :partial => 'layouts/facebook' %>
-  <%= render :partial => 'layouts/twitter' %>
+  <%= render :partial => 'layouts/facebook' if Rails.env == 'production' %>
+  <%= render :partial => 'layouts/twitter' if Rails.env == 'production' %>
   </body>
 </html>
