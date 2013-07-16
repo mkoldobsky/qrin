@@ -7,6 +7,7 @@ def index
 		@path = request.path
 		@generation = Generation.where("hashname = ?", @path).first
 		@awkin.generation = @generation
+		@awkin.request = request.raw_post()
 		@awkin.save
 		@total = @awkin.id
 		respond_to do |format|

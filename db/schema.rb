@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130623191822) do
+ActiveRecord::Schema.define(:version => 20130628220147) do
 
   create_table "awkins", :force => true do |t|
     t.datetime "date"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(:version => 20130623191822) do
     t.datetime "updated_at",    :null => false
     t.integer  "generation_id"
     t.integer  "location_id"
+    t.string   "request"
   end
 
   create_table "generations", :force => true do |t|
